@@ -5,7 +5,7 @@ defmodule KVServer do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
-
+    port = Application.fetch_env!(:kv_server, :listen_socket)
     children = [
       # Define workers and child supervisors to be supervised
       supervisor(Task.Supervisor, [[name: KVServer.TaskSupervisor]]),

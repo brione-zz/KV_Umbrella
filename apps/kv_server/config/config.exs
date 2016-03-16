@@ -28,5 +28,5 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :kv, :listen_port, [4040]
+config :kv_server, :listen_port, [4040]
 
