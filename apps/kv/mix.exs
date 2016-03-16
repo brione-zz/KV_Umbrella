@@ -18,7 +18,9 @@ defmodule KV.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger], mod: {KV, []}]
+    [applications: [], 
+    env: [routing_table: []],
+    mod: {KV, []}]
   end
 
   # Dependencies can be Hex packages:
