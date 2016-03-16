@@ -1,4 +1,3 @@
 # KvUmbrella
 
-**TODO: Add description**
-
+Elixir distributed example
